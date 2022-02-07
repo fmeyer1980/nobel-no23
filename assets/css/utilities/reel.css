@@ -1,0 +1,23 @@
+.reel {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reel::-webkit-scrollbar {
+  height: 16px;
+}
+
+.reel::-webkit-scrollbar-thumb {
+  @apply bg-primary-500 rounded-2xl border-solid border-[3px] border-primary-200;
+}
+
+.reel > * {
+  flex-shrink: 0;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.reel::-webkit-scrollbar-track{
+  @apply bg-primary-200 rounded-2xl;
+}

@@ -1,0 +1,26 @@
+
+:root {
+  --gutter: var(--size-500);
+  --container-width: 71.25rem;
+  --container-padding: var(--gutter);
+
+  --container-padding: calc((100vw - var(--container-width)) / 2);
+
+  --size-xxs: 0.8125rem;
+  --size-xs: 0.875rem;
+  --size-sm: 0.9375rem;
+  --size-100: clamp(0.875rem, 0.8214rem + 0.2381vw, 1rem);
+  --size-200: clamp(1rem, 0.9464rem + 0.2381vw, 1.125rem);
+  --size-300: clamp(1.125rem, 1.0714rem + 0.2381vw, 1.25rem);
+  --size-400: clamp(1.25rem, 1.1429rem + 0.4762vw, 1.5rem);
+  --size-500: clamp(1.5rem, 1.3393rem + 0.7143vw, 1.875rem);
+  --size-600: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
+  --size-700: clamp(2.375rem, 2.1071rem + 1.1905vw, 3rem);
+  --size-800: clamp(3rem, 2.3571rem + 2.8571vw, 4.5rem);
+  --size-900: clamp(4.5rem, 3.8036rem + 3.0952vw, 6.125rem);
+  --size-lg: clamp(5.75rem, 4.2500rem + 6.6667vw, 9.25rem);
+  --size-xl: clamp(6.875rem, 4.4643rem + 10.7143vw, 12.5rem);
+}
+
+
+

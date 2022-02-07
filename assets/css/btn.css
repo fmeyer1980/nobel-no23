@@ -1,0 +1,60 @@
+.btn {
+    @apply inline-flex items-center justify-center transition-all duration-300 ease-in-out font-bold gap-em-0.4;
+    padding: 0.7em 2.4em;
+  }
+  
+  .btn[data-type="primary"]{
+    @apply text-secondary-900 bg-primary-400;
+    position: relative;
+    border-radius: 2px;
+  }
+
+
+  .btn[data-type="primary"]::after{
+    content: "";
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-color: transparent;
+    border: 2px solid;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-radius: 4px;
+    @apply border-primary-400;
+  }
+
+  .btn[data-type="secondary"]{
+    @apply border-2 border-transparent bg-transparent ring-2 ring-primary-200;
+    border-radius: 2px;
+  }
+
+  .btn[data-type="tertiary"]{
+    @apply text-primary-100 bg-secondary-800;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .btn[data-type="tertiary"]::after{
+    content: "";
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-color: transparent;
+    border: 2px solid;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-radius: 4px;
+    @apply border-secondary-800;
+  }
+
+
+  .tttd{
+    @apply transform translate-y-1/2 translate-x-[15px] before:absolute before:bg-secondary-900 before:z-[-100] before:rounded-[3px] before:border-[15px] before:border-primary-300;
+    
+  }
+
+  .tttd::before{
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border-radius: 5px;
+  }
